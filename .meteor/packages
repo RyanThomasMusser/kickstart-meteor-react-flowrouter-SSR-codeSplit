@@ -27,3 +27,4 @@ accounts-password
 blaze-html-templates
 meteorhacks:flow-router
 kadira:react-layout
+webpack:json

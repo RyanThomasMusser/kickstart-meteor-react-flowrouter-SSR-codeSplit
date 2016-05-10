@@ -30,6 +30,7 @@
     "react-transform-hmr": "^1.0.1",
     "react-transform-catch-errors": "^1.0.0",
     "redbox-react": "^1.2.0",
-    "expose-loader": "^0.7.1"
+    "expose-loader": "^0.7.1",
+    "json-loader": "^0.5.4"
   }
 }
