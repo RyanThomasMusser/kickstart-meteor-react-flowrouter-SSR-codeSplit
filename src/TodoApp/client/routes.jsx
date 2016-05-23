@@ -1,4 +1,4 @@
-import { FlowRouter } from 'meteor/meteorhacks:flow-router';
+import { FlowRouter } from 'meteor/kadira:flow-router-ssr';
 import { mount } from 'react-mounter';
 import TodoApp from './components/TodoApp';
 

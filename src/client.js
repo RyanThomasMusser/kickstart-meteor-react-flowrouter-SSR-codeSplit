@@ -1,4 +1,4 @@
-import { FlowRouter } from 'meteor/meteorhacks:flow-router';
+import { FlowRouter } from 'meteor/kadira:flow-router-ssr';
 
 import 'TodoApp/client';
 

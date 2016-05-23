@@ -22,7 +22,7 @@ webpack:assets
 accounts-ui
 accounts-password
 blaze-html-templates
-meteorhacks:flow-router
+kadira:flow-router-ssr
 standard-minifier-css
 standard-minifier-js
 thereactivestack:blazetoreact
