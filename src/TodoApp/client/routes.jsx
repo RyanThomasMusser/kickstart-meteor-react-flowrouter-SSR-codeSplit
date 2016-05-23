@@ -1,9 +1,10 @@
 import { FlowRouter } from 'meteor/kadira:flow-router-ssr';
 import { mount } from 'react-mounter';
-import TodoApp from './components/TodoApp';
 
 FlowRouter.route('/', {
   action() {
-    mount(TodoApp);
+    require(['./components/TodoApp'], function(TodoApp) {
+      mount(TodoApp);
+    })
   }
 });
