@@ -1,0 +1,49 @@
+/* CSS declarations go here */
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+
+.todo-item {
+  position: relative;
+  list-style: none;
+  border-bottom: #eee solid 1px;
+}
+
+.todo-item a{
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+}
+
+.todo-item .text {
+  margin-left: 10px;
+}
+
+.todo-item.checked {
+  color: #888;
+}
+
+.todo-item.checked .text {
+  text-decoration: line-through;
+}
+
+.todo-item.private {
+  background: #eee;
+  border-color: #ddd;
+}
+
+.togglePrivate {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .todo-item {
+    padding: 12px 15px;
+  }
+}
