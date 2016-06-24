@@ -24,7 +24,8 @@ import '../methods';
  * We only do Server Side Rendering in production to be able to use
  * Hot Module Reload in development and avoid super long server rebuild
  */
-if (process.env.NODE_ENV === 'production') {
+const useSSRAnyway = true;
+if (process.env.NODE_ENV === 'production' || useSSRAnyway) {
   const { setUpRoutes } = require('../client/routes.jsx');
   setUpRoutes();
 }
