@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import TodoHeader from '../containers/TodoHeader.jsx';
 import TodoList from '../containers/TodoList.jsx';
 
-export default class TodoMain extends Component {
+export default class TodoFeed extends Component {
   static propTypes = {
     tasks: PropTypes.array.isRequired,
     incompleteCount: PropTypes.number.isRequired,

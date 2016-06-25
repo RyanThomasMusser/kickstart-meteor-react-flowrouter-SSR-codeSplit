@@ -9,7 +9,7 @@ const style = (typeof Meteor === 'undefined' || Meteor.isClient) ?
   require('../css/TodoFeed.import.css') :
   require('!css!../css/TodoFeed.import.css');
 
-export default new ContainerFactory(TodoFeed, {
+const container = new ContainerFactory(TodoFeed, {
   styles: [style],
   contextProperties: [
     'Meteor',
@@ -38,3 +38,10 @@ export default new ContainerFactory(TodoFeed, {
     hideCompleted: state.tasks.hideCompleted,
   }),
 });
+
+if (Meteor.isClient) {
+  window.TodoFeed = TodoFeed;
+  window.TodoFeedContainer = container;
+}
+
+export default container;

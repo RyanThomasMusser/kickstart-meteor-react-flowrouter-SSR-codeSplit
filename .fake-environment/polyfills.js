@@ -17,9 +17,7 @@ export const Meteor = {
 };
 
 export const FlowRouter = {
-  go: function() {
-
-  },
+  go: () => {},
 }
 
 export const FakeCollection = (name, documents=[]) => {
@@ -40,4 +38,14 @@ export const FakeCollection = (name, documents=[]) => {
 
 export const DefaultCollections = {
   Tasks: new FakeCollection('users', tasksData),
+};
+
+export const Tracker = {
+  autorun: (cb) => {
+    cb();
+    return {
+      stop: () => {},
+    };
+  },
+  nonreactive: (cb) => { cb(); },
 };

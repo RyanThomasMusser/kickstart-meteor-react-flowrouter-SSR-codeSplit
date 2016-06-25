@@ -16,7 +16,6 @@ export default class Task extends Component {
   };
   constructor(props) {
     super(props);
-
     // React doesn't auto bind functions...
     this.handleSetPrivate = this.handleSetPrivate.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
@@ -63,7 +62,6 @@ export default class Task extends Component {
     }
 
     const { task } = this.props;
-
     return (
       <div className={`${itemClass} item-main`}>
         <button className="delete" onClick={this.handleDelete}>&times;</button>

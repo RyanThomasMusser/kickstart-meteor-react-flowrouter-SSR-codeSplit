@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 
-import FakeContext from '../../../../../../.storybook/FakeContext.jsx';
-import { DefaultCollections } from '../../../../../../.storybook/polyfills.js';
+import FakeContext from '../../../../../.fake-environment/FakeContext.jsx';
+import { DefaultCollections } from '../../../../../.fake-environment/polyfills.js';
 
-import Task from '../../containers/Task.jsx';
+import Task from '../containers/Task.jsx';
 
 
 storiesOf('Task', module)

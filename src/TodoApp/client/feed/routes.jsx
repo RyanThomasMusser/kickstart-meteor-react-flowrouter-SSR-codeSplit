@@ -8,16 +8,16 @@ export default (store) => {
   FlowRouter.route('/', {
     name: 'default',
     action: () => {
-      const mountComponent = (TodoFeedContainer) => {
-        mount(Layout, { content: () => <TodoFeedContainer />, store });
+      const mountComponent = (TodoFeed) => {
+        mount(Layout, { content: () => <TodoFeed />, store });
       };
       if (Meteor.isServer) {
-        const TodoFeedContainer = require('./containers/TodoFeed.jsx');
-        mountComponent(TodoFeedContainer);
+        const TodoFeed = require('./containers/TodoFeed.jsx');
+        mountComponent(TodoFeed);
       } else {
         require.ensure([], (require) => {
-          const TodoFeedContainer = require('./containers/TodoFeed.jsx');
-          mountComponent(TodoFeedContainer);
+          const TodoFeed = require('./containers/TodoFeed.jsx');
+          mountComponent(TodoFeed);
         });
       }
     },

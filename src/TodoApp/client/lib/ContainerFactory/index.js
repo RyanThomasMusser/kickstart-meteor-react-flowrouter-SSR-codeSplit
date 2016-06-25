@@ -23,6 +23,7 @@
 
 import { composeWithTracker } from 'react-komposer';
 import { connect } from 'react-redux';
+import hoistStatics from 'hoist-non-react-statics';
 
 /*
  * You can either dig in the following code, or take this boilerplate as a taken
@@ -37,8 +38,6 @@ import { ensureStylesAreLoaded } from './ensureStylesAreLoaded.jsx';
  * passing state and actions, and context
  */
 export default (ChildComponent, options) => {
-  const componentName = ChildComponent.displayName || ChildComponent.name;
-
   let ContainerComponent = ChildComponent;
   const {
     mapStateToProps,
@@ -47,7 +46,9 @@ export default (ChildComponent, options) => {
     getData,
     styles,
   } = options;
-
+  if (styles) {
+    ContainerComponent = ensureStylesAreLoaded(ContainerComponent, styles);
+  }
   if (getData) {
     ContainerComponent = composeWithTracker(getData)(ContainerComponent);
   }
@@ -60,11 +61,6 @@ export default (ChildComponent, options) => {
   if (contextProperties) {
     ContainerComponent = exposeContextToComponentProps(ContainerComponent, contextProperties);
   }
-  if (styles) {
-    ContainerComponent = ensureStylesAreLoaded(ContainerComponent, styles);
-  }
-  if (componentName) {
-    ContainerComponent.displayName = componentName;
-  }
-  return ContainerComponent;
+  ContainerComponent.displayName = ChildComponent.displayName || ChildComponent.name;
+  return hoistStatics(ContainerComponent, ChildComponent);
 };

@@ -4,6 +4,7 @@
  * It loads the files the server needs.
  */
 
+
 /*
  * 2.1
  * Webpack will resolve the files by looking at .js, .jsx, .css, /index.js etc
