@@ -41,6 +41,7 @@ It's not great because:
 It's great because:
 - it makes things super clean and help your codebase to scale.
 - it's very well documented.
+- 
 It's not great because:
 - it feels like boilerplate
 
@@ -70,7 +71,7 @@ Code splitting is the idea of having a client app that loads its code by chunks 
 Tests.. well you should do them!
 
 # Running
-## Instalation
+## Installation
 ```shell
 git clone https://github.com/gsabran/kickstart-meteor-react-flowrouter-redux-ssr-code-splitting.git
 cd kickstart-meteor-react-flowrouter-ssr-code-splitting
@@ -100,7 +101,7 @@ npm run test # both test and lint
 ## Production
 Use mupx
 
-# things to be aware of
+# Things to be aware of
 - SSR prevents Hot Module Reload (HMR) since the server compile client code and therefore rebuild everytime you change it. You probably want to disable SSR in development. To do that, change [this line](https://github.com/gsabran/kickstart-meteor-react-flowrouter-SSR-codeSplit/blob/master/src/TodoApp/server/index.js#L28)
 - code splitting only works on the client so you will see code like
 ```js
