@@ -3,9 +3,9 @@
 Skeleton project for **Meteor** with **React**, **Redux**, **Webpack**, **FlowRouter**, Server side rendering (**SSR**) and code **splitting**!
 It's the skeleton project I wish I'd had when starting a serious Meteor project. It aims at providing all the structure and boilerplate for a modern web app.
 
-# Sharing experience about the key technologies:
-## Meteor
-Meteor is a fullstack javascript framework. It's great at:
+## Sharing experience about the key technologies:
+### Meteor
+(Meteor)[https://docs.meteor.com/] is a fullstack javascript framework. It's great at:
 - **managing data**: everything is reactive and it's taken care of for you; client and server data logic can be shared.
 - **optimistic UI**: the client is able to anticipate server responses and instantly updates the UI (-> great UX)
 - **npm**: anything that is in npm, you can get it within Meteor.
@@ -17,8 +17,8 @@ It is not great at:
 - **build time**: client and server rebuilds are not super fast, and can be very long. It's not easy nor transparent to use other build build tools you might be used to or want to use, because they do a better job at what they've been build for (like webpack).
 - being opiniated: it wraps your entire stack, but doesn't tell you which rendering frameworks, or which databases type to use. While that sounds awesome it also splits the effort of the community and Meteor team.
 
-## React
-React, from Facebook, is a front end framework that manages app logic and UI rendering.
+### React
+(React)[https://facebook.github.io/react/], from Facebook, is a front end framework that manages app logic and UI rendering.
 It's great because:
 - the design pattern (UI is a function of state) is very clear. It makes your client logic beautiful.
 - rendering is very smart and efficient.
@@ -30,16 +30,16 @@ It's not great because:
 - it's one more thing to learn
 - it represents a decent amounts of kb of code to bundle with the app
 
-## Redux
-Redux is an implementation of Flux, which is a pattern to handle app logic.
+### Redux
+(Redux)[https://github.com/reactjs/redux] is an implementation of Flux, which is a pattern to handle app logic.
 It's great because:
 - it makes things super clean and help your codebase to scale.
 - it's very well documented.
 It's not great because:
 - it feels like boilerplate
 
-## Webpack
-Webpack is a build process for web apps.
+### Webpack
+(Webpack)[https://webpack.github.io/] is a build process for web apps.
 It's great because:
 - it's super customisable, and can do a loooot.
 - it refreshes client code almost instantly. That will improve development by a lot (there're other ways to do just that)
@@ -49,34 +49,48 @@ It's not great because:
 - startup build takes a while
 - it doesn't play very well with Meteor, because Meteor is not super complient with node standards (but getting there) and has different build standards.
 
-## FlowRouter
-FlowRouter is a great router for Meteor. It can handle server side rendering.
+### FlowRouter
+(FlowRouter)[https://github.com/kadirahq/flow-router/tree/ssr] is a great router for Meteor. It can handle server side rendering.
 
-## Code splitting
+### Code splitting
 Code splitting is the idea of having a client app that loads its code by chunks when needed instead of all at once.
 
-## Storybook
-Storybook is a great way to see your UI components in isolation, to make sure all looks good and to quickly work on a single component.
+### Storybook
+(Storybook)[https://github.com/kadirahq/react-storybook] is a great way to see your UI components in isolation, to make sure all looks good and to quickly work on a single component.
 
-## Tests
+### Tests
 Tests.. well you should do them!
 
-# setup
-## 1: install and launch the server
+# Running
+## Instalation
 ```shell
 git clone https://github.com/gsabran/kickstart-meteor-react-flowrouter-redux-ssr-code-splitting.git
 cd kickstart-meteor-react-flowrouter-ssr-code-splitting
 npm install
-meteor
 ```
 
-## 2: use it
-- in your favorite browser (Chrome) go to http://localhost:3000
-- you might have to wait a bit for the server to start
+## Run
+- Meteor
+```shell
+meteor
+```
+- Storybook
+```shell
+npm run storybook
+```
+- tests / lint
+```shell
+npm run testonly
+npm run lint
+npm run test # both test and lint
+```
 
-## 3: understand it
+## Understand
 - play around with the app at http://localhost:3000 to see what it does. It's basic.
 - **open `./package.json` and follow the comments**
+
+## Production
+Use mupx
 
 # things to be aware of
 - SSR prevents Hot Module Reload (HMR) since the server compile client code and therefore rebuild everytime you change it. You probably want to disable SSR in development. To do that, change [this line](https://github.com/gsabran/kickstart-meteor-react-flowrouter-SSR-codeSplit/blob/master/src/TodoApp/server/index.js#L28)
@@ -105,25 +119,3 @@ meteor
           require('!css!../css/Task.import.css');
 ```
         - on the server, the style is added in the head as raw text with a utility function that is part of the boilerplate
-
-
-
-# Production
-You can use meteor run, meteor build, mup or anything working with Meteor.
-
-## Run in production mode
-`meteor run --production`
-
-## Build for production
-`meteor build .`
-
-## Deploy with Meteor-up
-`mup deploy`
-
-## Storybook
-I've added a few stories using https://github.com/kadirahq/react-storybook. Run
-```shell
-$ npm run storybook
-```
-
-And open your browser at http://localhost:9001 to see isolated UI components.
