@@ -1,4 +1,6 @@
-Skeleton project for Meteor with React, Redux, Webpack, FlowRouter, Server side rendering (SSR) and code splitting!
+# Intro
+
+Skeleton project for **Meteor** with **React**, **Redux**, **Webpack**, **FlowRouter**, Server side rendering (**SSR**) and code **splitting**!
 It's the skeleton project I wish I'd had when starting a serious Meteor project. It aims at providing all the structure and boilerplate for a modern web app.
 
 # Sharing experience about the key technologies:
