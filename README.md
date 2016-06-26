@@ -13,6 +13,7 @@ It's the skeleton project I wish I'd had when starting a serious Meteor project.
   - build for production is taken care off. It refreshes clients live.
   - isomorphism: you can share code between client and server.
   - plenty of awesome community packages. I could not emphasize it enough.
+
 It is not great at:
 - **build time**: client and server rebuilds are not super fast, and can be very long. It's not easy nor transparent to use other build build tools you might be used to or want to use, because they do a better job at what they've been build for (like webpack).
 - being opiniated: it wraps your entire stack, but doesn't tell you which rendering frameworks, or which databases type to use. While that sounds awesome it also splits the effort of the community and Meteor team.
@@ -26,6 +27,7 @@ It's great because:
 - it can be used for native apps with React Native.
 - documentation is awesome
 - it has a big community behind it
+
 It's not great because:
 - it's one more thing to learn
 - it represents a decent amounts of kb of code to bundle with the app
@@ -44,6 +46,7 @@ It's great because:
 - it's super customisable, and can do a loooot.
 - it refreshes client code almost instantly. That will improve development by a lot (there're other ways to do just that)
 - it is becoming the default in the node community
+
 It's not great because:
 - it's one more thing to learn
 - startup build takes a while
