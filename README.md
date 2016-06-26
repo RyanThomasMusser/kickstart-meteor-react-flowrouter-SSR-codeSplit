@@ -128,6 +128,7 @@ Use mupx
 - style doesn't get added by default on the server (when doing SSR) so:
     - by default SSR would produce a code with missing style and the page would be ugly until the client side code runs
     - to avoid that:
+        - on the server, the style is added in the head as raw text with a utility function that is part of the boilerplate
         - style gets loaded differently on the client and the server:
 ```js
         // TodoApp/task/components/Task.jsx
@@ -135,4 +136,3 @@ Use mupx
           require('../css/Task.import.css') :
           require('!css!../css/Task.import.css');
 ```
-        - on the server, the style is added in the head as raw text with a utility function that is part of the boilerplate
