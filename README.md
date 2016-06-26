@@ -3,6 +3,14 @@
 Skeleton project for **Meteor** with **React**, **Redux**, **Webpack**, **FlowRouter**, Server side rendering (**SSR**) and code **splitting**!
 It's the skeleton project I wish I'd had when starting a serious Meteor project. It aims at providing all the structure and boilerplate for a modern web app.
 
+If you like it, give it some stars :)
+
+### Goal
+Provide an excellent starting point for an ambitious Meteor app. There's probably some overkills if you're doing a hackathon project.
+
+### How to help
+I'd love to get contributions on what you wish you'd knew when you got seriously started. There're are a few things that come in mind: more tests, deployement scripts, mantra, etc. But any idea/feedback/PR is welcomed!
+
 ## Sharing experience about the key technologies:
 ### Meteor
 [Meteor](https://docs.meteor.com) is a fullstack javascript framework.
@@ -41,7 +49,7 @@ It's not great because:
 It's great because:
 - it makes things super clean and help your codebase to scale.
 - it's very well documented.
-- 
+
 It's not great because:
 - it feels like boilerplate
 
@@ -68,7 +76,7 @@ Code splitting is the idea of having a client app that loads its code by chunks 
 [Storybook](https://github.com/kadirahq/react-storybook) is a great way to see your UI components in isolation, to make sure all looks good and to quickly work on a single component.
 
 ### Tests
-Tests.. well you should do them!
+Tests.. well you should write them! Here I show how to write unit tests on UI components, but there's much more to do.
 
 # Running
 ## Installation
