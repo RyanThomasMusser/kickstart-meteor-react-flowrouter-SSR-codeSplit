@@ -39,7 +39,7 @@ export default class TodoHeader extends Component {
     return (
       <header>
         <h1>
-          <img src={require('/client/img/check.png')} alt="" />
+          <img src={require('../../../img/check.png')} alt="" />
           Todo List ({incompleteCount})
         </h1>
 
