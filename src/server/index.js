@@ -18,7 +18,8 @@ import './publications.js'; // this could be import './publications'
 import '../methods';
 
 /*
- * go to 'TodoApp/methods'
+ * 2.2
+ * go to '../methods'
  */
 
 /*

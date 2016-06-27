@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { Provider } from 'react-redux';
-import configureStore from '../src/TodoApp/client/lib/store.js';
+import configureStore from '../src//client/lib/store.js';
 
 import { Meteor, FlowRouter, DefaultCollections } from './polyfills.js';
-import { contextTypes } from '../src/TodoApp/client/views/layout/config/contextTypes.js';
+import { contextTypes } from '../src//client/views/layout/config/contextTypes.js';
 
 const context = {
   Meteor,

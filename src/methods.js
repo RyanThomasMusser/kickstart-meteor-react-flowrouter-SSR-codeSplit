@@ -76,5 +76,5 @@ Meteor.methods({
  *    - a collection to store tasks
  *    - APIs endpoints
  *
- * go to /src/TodoApp/client/index.js
+ * go to /src//client/index.js
  */

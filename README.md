@@ -110,10 +110,10 @@ npm run test # both test and lint
 Use mupx
 
 # Things to be aware of
-- SSR prevents Hot Module Reload (HMR) since the server compile client code and therefore rebuild everytime you change it. You probably want to disable SSR in development. To do that, change [this line](https://github.com/gsabran/kickstart-meteor-react-flowrouter-SSR-codeSplit/blob/master/src/TodoApp/server/index.js#L28)
+- SSR prevents Hot Module Reload (HMR) since the server compile client code and therefore rebuild everytime you change it. You probably want to disable SSR in development. To do that, change [this line](https://github.com/gsabran/kickstart-meteor-react-flowrouter-SSR-codeSplit/blob/master/src/server/index.js#L28)
 - code splitting only works on the client so you will see code like
 ```js
-  // TodoApp/task/router.jsx
+  // src/task/router.jsx
   if (Meteor.isServer) {
     const TaskContainer = require('./containers/Task.jsx');
     mountComponent(TaskContainer);
@@ -131,7 +131,7 @@ Use mupx
         - on the server, the style is added in the head as raw text with a utility function that is part of the boilerplate
         - style gets loaded differently on the client and the server:
 ```js
-        // TodoApp/task/components/Task.jsx
+        // src/task/components/Task.jsx
         const style = Meteor.isClient ?
           require('../css/Task.import.css') :
           require('!css!../css/Task.import.css');

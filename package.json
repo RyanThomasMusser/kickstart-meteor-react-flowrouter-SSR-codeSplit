@@ -8,14 +8,14 @@
   "//": "We define two entry points: one for the server and one for the client.",
   "//": "All client files should be required recursevily from the 'browser' endpoint",
   "//": "and all server files should be required recursevily from the 'main' endpoint",
-  "//": "Go to src/TodoApp/server/index.js",
+  "//": "Go to src/server/index.js",
 
-  "main": "src/TodoApp/server/index.js",
-  "browser": "src/TodoApp/client/index.jsx",
+  "main": "src/server/index.js",
+  "browser": "src/client/index.jsx",
   "scripts": {
     "storybook": "start-storybook -p 9001",
     "lint": "eslint src",
-    "testonly": "NODE_PATH='src' mocha .scripts/mocha_boot.js src/TodoApp/client/**/.tests/**/*.js* --compilers js:babel-core/register --require ignore-styles",
+    "testonly": "NODE_PATH='src' mocha .scripts/mocha_boot.js src/client/**/.tests/**/*.js* --compilers js:babel-core/register --require ignore-styles",
     "test": "npm run testonly && npm run lint"
   },
   "dependencies": {
