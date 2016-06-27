@@ -1,7 +1,7 @@
 /*
  * A container for the todos feed
  */
-import ContainerFactory from '../../lib/ContainerFactory';
+import ContainerFactory from '../../../lib/ContainerFactory';
 
 import TodoFeed from '../components/TodoFeed.jsx';
 

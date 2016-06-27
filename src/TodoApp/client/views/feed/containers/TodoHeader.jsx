@@ -2,7 +2,7 @@
  * A container for the header of the todos feed
  */
 
-import ContainerFactory from '../../lib/ContainerFactory';
+import ContainerFactory from '../../../lib/ContainerFactory';
 
 import {
   createTask,

@@ -14,8 +14,8 @@ import configureStore from './lib/store.js';
  * For clarity, the app's logic is split in several modules
  */
 
-import task from './task'; // webpack will resolve this route to ./task/index.js
-import feed from './feed';
+import task from './views/task'; // webpack will resolve this route to ./task/index.js
+import feed from './views/feed';
 
 /*
  * 5.3

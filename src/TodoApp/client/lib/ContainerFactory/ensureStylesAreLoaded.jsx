@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { contextTypes } from '../../layout/config/contextTypes.js';
+import { contextTypes } from '../../views/layout/config/contextTypes.js';
 
 /*
  * For SSR, add the style in the head of the page being computed
@@ -33,6 +33,7 @@ export const ensureStylesAreLoaded = (ChildComponent, styles) => {
   if (typeof Meteor === 'undefined' || Meteor.isClient) { return ChildComponent; }
 
   const componentName = ChildComponent.displayName || ChildComponent.name;
+  console.log('style loading for', componentName);
 
   const stylesWrapper = [];
   for (const style of styles) {

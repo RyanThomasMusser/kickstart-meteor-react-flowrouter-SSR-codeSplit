@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import { contextTypes } from '../../layout/config/contextTypes.js';
+import { contextTypes } from '../../views/layout/config/contextTypes.js';
 
 export const exposeContextToComponentProps = (ChildComponent, contextProperties) => {
   class Container extends Component {

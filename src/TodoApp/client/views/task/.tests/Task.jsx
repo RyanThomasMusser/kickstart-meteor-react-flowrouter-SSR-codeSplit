@@ -3,8 +3,8 @@ import { shallow, mount } from 'enzyme';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import FakeContext from '../../../../../.fake-environment/FakeContext.jsx';
-import { DefaultCollections } from '../../../../../.fake-environment/polyfills.js';
+import FakeContext from '../../../../../../.fake-environment/FakeContext.jsx';
+import { DefaultCollections } from '../../../../../../.fake-environment/polyfills.js';
 
 import TaskContainer from '../containers/Task.jsx';
 import Task from '../components/Task.jsx';

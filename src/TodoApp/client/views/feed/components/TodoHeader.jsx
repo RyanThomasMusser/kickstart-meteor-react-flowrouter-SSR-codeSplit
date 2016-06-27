@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import NoSSR from 'react-no-ssr';
 import { BlazeToReact } from 'meteor/thereactivestack:blazetoreact';
 
 const LoginButtons = new BlazeToReact('loginButtons');
@@ -47,7 +48,7 @@ export default class TodoHeader extends Component {
           Hide Completed Tasks
         </label>
 
-        <LoginButtons />
+        <NoSSR><LoginButtons /></NoSSR>
 
         {userId && <form className="newTask" onSubmit={this.handleSubmit}>
           <input type="text" name="text" placeholder="Type to add new tasks" />

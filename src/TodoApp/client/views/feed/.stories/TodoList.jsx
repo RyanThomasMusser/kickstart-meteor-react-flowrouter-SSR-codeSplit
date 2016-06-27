@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { storiesOf } from '@kadira/storybook';
 
-import FakeContext from '../../../../../.fake-environment/FakeContext.jsx';
+import FakeContext from '../../../../../../.fake-environment/FakeContext.jsx';
 
 import TodoList from '../containers/TodoList.jsx';
 

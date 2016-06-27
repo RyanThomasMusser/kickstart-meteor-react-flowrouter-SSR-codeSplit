@@ -16,8 +16,6 @@
 import React, { PropTypes, Component } from 'react';
 import { Provider } from 'react-redux';
 
-import '../css/Layout.import.css';
-
 import { context } from '../config/context.js';
 import { contextTypes } from '../config/contextTypes.js';
 
@@ -41,6 +39,7 @@ export default class Layout extends Component {
     </Provider>;
   }
 }
+Layout._context = context;
 
 /*
  * 8.1

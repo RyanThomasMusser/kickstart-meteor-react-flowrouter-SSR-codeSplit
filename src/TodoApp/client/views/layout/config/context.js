@@ -13,7 +13,7 @@
 import { FlowRouter } from 'meteor/kadira:flow-router-ssr';
 import { Meteor } from 'meteor/meteor';
 
-import Collections from '../../../collections/collections.js';
+import Collections from '../../../../collections/collections.js';
 
 
 const pathFor = (path, params) => {

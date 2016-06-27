@@ -17,8 +17,8 @@ global.Tracker = {
 };
 
 function loadStories() {
-  require('../src/TodoApp/client/task/.stories/Task.jsx');
-  require('../src/TodoApp/client/feed/.stories/TodoList.jsx');
+  require('../src/TodoApp/client/views/task/.stories/Task.jsx');
+  require('../src/TodoApp/client/views/feed/.stories/TodoList.jsx');
 }
 
 configure(loadStories, module);

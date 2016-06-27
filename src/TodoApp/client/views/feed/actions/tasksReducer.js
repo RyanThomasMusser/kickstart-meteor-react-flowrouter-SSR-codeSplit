@@ -1,5 +1,5 @@
 import { TOGGLE_HIDE_COMPLETED } from './actions.js';
-import { initialState } from '../../lib/reducers.js';
+import { initialState } from '../../../lib/reducers.js';
 
 export default (state = initialState, action) => {
   switch (action.type) {

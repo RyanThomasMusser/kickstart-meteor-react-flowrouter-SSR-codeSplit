@@ -1,4 +1,4 @@
-import ContainerFactory from '../../lib/ContainerFactory';
+import ContainerFactory from '../../../lib/ContainerFactory';
 
 import TodoList from '../components/TodoList.jsx';
 

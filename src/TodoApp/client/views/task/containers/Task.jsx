@@ -17,10 +17,10 @@
  *    - interacting with Redux and the app state
  *    - loading style in initial page load when doing SSR
  */
-import ContainerFactory from '../../lib/ContainerFactory';
+import ContainerFactory from '../../../lib/ContainerFactory';
 /*
  * 10.2
- * Check out ../../lib/ContainerFactory/index.js (do it now!)
+ * Check out ../../../lib/ContainerFactory/index.js (do it now!)
  */
 
 /*

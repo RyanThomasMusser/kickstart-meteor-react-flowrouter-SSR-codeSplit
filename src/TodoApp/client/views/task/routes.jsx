@@ -13,7 +13,7 @@ import { mount } from 'react-mounter';
  * Layout is a wrapper around all the client UI that passes some environement information
  * We'll go there next
  */
-import Layout from '../layout/components/Layout.jsx';
+import Layout from '../layout/containers/Layout.jsx';
 
 export default (store) => {
   /*
