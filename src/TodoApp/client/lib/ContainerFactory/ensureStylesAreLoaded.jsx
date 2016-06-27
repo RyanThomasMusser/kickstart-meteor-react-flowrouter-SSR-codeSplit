@@ -33,7 +33,6 @@ export const ensureStylesAreLoaded = (ChildComponent, styles) => {
   if (typeof Meteor === 'undefined' || Meteor.isClient) { return ChildComponent; }
 
   const componentName = ChildComponent.displayName || ChildComponent.name;
-  console.log('style loading for', componentName);
 
   const stylesWrapper = [];
   for (const style of styles) {
