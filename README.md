@@ -81,7 +81,7 @@ Tests.. well you should write them! Here I show how to write unit tests on UI co
 # Running
 ## Installation
 ```shell
-git clone https://github.com/gsabran/kickstart-meteor-react-flowrouter-redux-ssr-code-splitting.git
+git clone https://github.com/gsabran/kickstart-meteor-react-flowrouter-SSR-codeSplit.git
 cd kickstart-meteor-react-flowrouter-ssr-code-splitting
 npm install
 ```
