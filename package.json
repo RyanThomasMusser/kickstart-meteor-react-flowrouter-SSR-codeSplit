@@ -3,13 +3,7 @@
   "private": "true",
   "version": "1.0.0",
   "description": "Kickstart a project with Meteor, React and react-router fast!",
-  
-  "//": "1.0",
-  "//": "We define two entry points: one for the server and one for the client.",
-  "//": "All client files should be required recursevily from the 'browser' endpoint",
-  "//": "and all server files should be required recursevily from the 'main' endpoint",
   "//": "Go to src/server/index.js",
-
   "main": "src/server/index.js",
   "browser": "src/client/index.jsx",
   "scripts": {
@@ -19,6 +13,7 @@
     "test": "npm run testonly && npm run lint"
   },
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "csso": "^2.2.0",
     "react": "^15.0.0",
     "react-addons-pure-render-mixin": "^15.0.0",

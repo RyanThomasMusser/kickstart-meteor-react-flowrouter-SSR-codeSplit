@@ -14,17 +14,21 @@ import configureStore from './lib/store.js';
  * For clarity, the app's logic is split in several modules
  */
 
-import task from './views/task'; // webpack will resolve this route to ./task/index.js
-import feed from './views/feed';
+import home from './views/home';
+import football from './views/football';
+import baseball from './views/baseball';
+import basketball from './views/basketball';
 
 /*
  * 5.3
  * Once called, we've defined all the routes
  */
 export const setUpRoutes = (currentStore) => {
-  const store = currentStore || configureStore();
-  task.load(store);
-  feed.load(store);
+	const store = currentStore || configureStore();
+	home.load(store);
+	football.load(store);
+	baseball.load(store);
+	basketball.load(store);
 };
 
 /*

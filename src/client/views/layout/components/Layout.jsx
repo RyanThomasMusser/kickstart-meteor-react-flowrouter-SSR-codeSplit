@@ -13,31 +13,38 @@
  * Anyway, go on!
  */
 
-import React, { PropTypes, Component } from 'react';
-import { Provider } from 'react-redux';
+import React, {PropTypes, Component} from 'react';
+import {Provider} from 'react-redux';
 
-import { context } from '../config/context.js';
-import { contextTypes } from '../config/contextTypes.js';
+import {context} from '../config/context.js';
+import {contextTypes} from '../config/contextTypes.js';
+
+import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 
 export default class Layout extends Component {
-  static childContextTypes = contextTypes;
-  static propTypes = {
-    content: PropTypes.func.isRequired,
-    store: PropTypes.object.isRequired,
-  };
-  getChildContext() {
-    // this makes whatever is in context accessible to all children
-    return context;
-  }
-  render() {
-    const { content, store } = this.props;
+	static childContextTypes = contextTypes;
+	static propTypes = {
+		content: PropTypes.func.isRequired,
+		store: PropTypes.object.isRequired
+	};
+	getChildContext() {
+		// this makes whatever is in context accessible to all children
+		return context;
+	}
+	render() {
+		const {content, store} = this.props;
 
-    return <Provider store={store}>
-      <div className="container">
-        {content()}
-      </div>
-    </Provider>;
-  }
+		return <Provider store={store}>
+			<div className="container">
+				{/**/}
+				<Header/> {/**/}
+				{content()}
+				{/**/}
+				<Footer/> {/**/}
+			</div>
+		</Provider>;
+	}
 }
 Layout._context = context;
 

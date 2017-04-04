@@ -1,0 +1,55 @@
+<head>
+ <!-- <title>BasketballRoto.com | Fantasy Basketball Tools</title>
+ <meta name="description" content="FREE fantasy basketball tools, content and updates. Win big using our Daily Lineup Builder, Sleeper Report and up to the minute news.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#cc3303"/>
+  <meta name="theme-color" content="#000000"/> -->
+
+  <!-- for Facebook -->
+<!-- <meta property="og:title" content="BasketballRoto.com" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://basketballroto.com/basketball-light.jpg" />
+<meta property="og:url" content="BasketballRoto.com" />
+<meta property="og:description" content="News, projections and advanced analytics for NBA DFS." /> -->
+
+<!-- for Twitter -->
+<!-- <meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="BasketballRoto.com" />
+<meta name="twitter:description" content="News, projections and advanced analytics for NBA DFS." />
+<meta name="twitter:image" content="http://basketballroto.com/basketball-light.jpg" /> -->
+
+<meta id="viewport" name="viewport">
+
+<script type="text/javascript">
+//mobile viewport hack
+(function(){
+
+  function apply_viewport(){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)   ) {
+
+      var ww = window.screen.width;
+      var mw = 575; // min width of site
+      var ratio =  ww / mw; //calculate ratio
+      var viewport_meta_tag = document.getElementById('viewport');
+      if( ww < mw){ //smaller than minimum size
+        viewport_meta_tag.setAttribute('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + mw);
+      }
+      else { //regular size
+        viewport_meta_tag.setAttribute('content', 'initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+      }
+    }
+  }
+
+  //ok, i need to update viewport scale if screen dimentions changed
+  window.addEventListener('resize', function(){
+    apply_viewport();
+  });
+
+  apply_viewport();
+
+}());
+</script>
+</head>
